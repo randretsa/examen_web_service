@@ -1,0 +1,35 @@
+.col-33 {
+  flex: 0 0 auto;
+  width: 50%;
+  }
+  
+  .full-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .rox{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+  }
+  .card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 5px;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .size{
+    width: 25%;
+  }
+  .hide{
+    display: none;
+  }

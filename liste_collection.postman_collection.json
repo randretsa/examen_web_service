@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "5ce61346-0972-4e83-b4b1-20f0c31fa00c",
+		"name": "liste_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/avions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/avions"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/avions/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/kilometrages/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/login?email=rakoto@gmail.com&&password=123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "rakoto@gmail.com"
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/logout?token=v2wkqp6ilvf671p52zpis2a5vjtv056gqw54lnluea2yg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "v2wkqp6ilvf671p52zpis2a5vjtv056gqw54lnluea2yg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/assurances/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/assurances/3"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "File",
+							"type": "file",
+							"src": "/C:/Users/Mendrika/Pictures/Saved Pictures/photoshop/face.jpg"
+						}
+					]
+				},
+				"url": "http://localhost:8080/api/upload/file"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/avions/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/avions/1"
+			},
+			"response": []
+		}
+	]
+}
