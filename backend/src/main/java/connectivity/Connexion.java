@@ -13,22 +13,22 @@ import java.sql.SQLException;
  * @author randretsa
  */
 public class Connexion {
-        static String user = "wzahxiyx";
-    static String password = "7B2KHIa7IXG2RDiOuxn7QNUn0mBlyVpj";
-    static String database = "wzahxiyx";
+        static String user = "postgres";
+    static String password = "root";
+    static String database = "gestion_flotte_group";
     Connection connect;
 
     public Connexion(String user,String password,String database) throws ClassNotFoundException,SQLException,InstantiationException,IllegalAccessException
     {
         Class.forName("org.postgresql.Driver").newInstance();
-        this.connect = DriverManager.getConnection( "jdbc:postgresql://heffalump.db.elephantsql.com:5432/"+database,user,password);
+        this.connect = DriverManager.getConnection( "jdbc:postgresql://localhost/"+database,user,password);
 
     }
 
     public Connexion() throws ClassNotFoundException,SQLException,InstantiationException,IllegalAccessException
     {
         Class.forName("org.postgresql.Driver").newInstance();
-        this.connect = DriverManager.getConnection( "jdbc:postgresql://heffalump.db.elephantsql.com:5432/"+database,user,password);
+        this.connect = DriverManager.getConnection( "jdbc:postgresql://localhost/"+database,user,password);
 
     }
 
